@@ -38,7 +38,7 @@ function App() {
                 }}/>
                 <button type={"submit"}>Save</button>
             </form>
-        {images.length > 0 && images.map((image) => <img src={image["data"]} alt="Image not found"/>)}
+        {images.length > 0 && images.map((image) => <img key={image.id} src={image["data"]} alt="Image not found"/>)}
         </div>);
 }
 
